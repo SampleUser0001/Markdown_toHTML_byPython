@@ -1,0 +1,8 @@
+version: '3'
+services:
+  python3:
+    build: .
+    container_name: 'markdownToHTML'
+    volumes:
+      - ./start.sh:/start.sh
+      - ./app:/app
